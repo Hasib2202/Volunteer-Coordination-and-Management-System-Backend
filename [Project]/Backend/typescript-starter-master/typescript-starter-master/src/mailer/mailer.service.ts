@@ -71,7 +71,7 @@ export class MailerService {
     }
 
     const mailOptions = {
-      from: 'imation337@gmail.com',
+      from: 'your@gmail.com',
       to: userEmail,
       subject: 'Password Reset Code',
       html: `
