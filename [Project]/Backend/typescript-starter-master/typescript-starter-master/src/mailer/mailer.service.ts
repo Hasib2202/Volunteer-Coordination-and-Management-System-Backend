@@ -9,8 +9,8 @@ export class MailerService {
     this.transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: 'imation337@gmail.com',
-        pass: 'irvx wxlz oefp gjce',
+        user: 'your@gmail.com',
+        pass: 'generated pass for mailer',
       },
     });
   }
@@ -22,7 +22,7 @@ export class MailerService {
     eventDate: string,
   ): Promise<void> {
     const mailOptions = {
-      from: 'imation337@gmail.com',
+      from: 'your@gmail.com',
       to: email,
       subject: 'Event Assignment Notification',
       html: `
